@@ -17,3 +17,12 @@ class PrinterPublic(BaseModel):
 
 class ListPrinterPublic(BaseModel):
     printers: list[PrinterPublic]
+    
+    
+class BranchPublic(BaseModel):
+    id: int | str
+    name: str
+    
+
+class ListBranchPublic(BaseModel):
+    branches: list[BranchPublic]
